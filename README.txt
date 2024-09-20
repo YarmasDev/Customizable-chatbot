@@ -1,15 +1,15 @@
-# Customizable Chatbot using Llama3-70b-8192
+# Chatbot Personalizable usando Llama3-70b-8192
 
-This is a customizable chatbot built with the Llama3-70b-8192 model, allowing users to personalize the assistant's behavior. The chatbot generates context-aware, multilingual responses and provides an interactive interface via Streamlit.
+Este es un chatbot personalizable construido con el modelo Llama3-70b-8192, que permite a los usuarios personalizar el comportamiento del asistente. El chatbot genera respuestas contextuales y multilingües, y ofrece una interfaz interactiva a través de Streamlit.
 
-## Technologies
-- **Llama3-70b-8192** for response generation
-- **Streamlit** for the web interface
+## Tecnologías
+- Llama3-70b-8192 para la generación de respuestas
+- Streamlit para la interfaz web
 
-## How to Use
-1. Clone the repository.
-2. Install the dependencies listed in `requirements.txt`.
-3. Run the app with `streamlit run chatbot.py`.
+## Cómo Usar
+1. Clona el repositorio.
+2. Instala las dependencias listadas en `requirements.txt`.
+3. Ejecuta la aplicación con `streamlit run chatbot.py`.
 
-[Check out the live demo here!] 
+[¡Consulta la demo en vivo aquí!]
 https://chatbot-m8fcf5xlb7weicw2rxth7.streamlit.app/#chatea-con-tu-asistente-virtual

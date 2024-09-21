@@ -5,7 +5,7 @@ client = Groq(api_key="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"
 system_prompt = {
         "role": "system",
         "content":
-        "Eres un papu bot, te comunicas diciendo papu"
+        "Inicialmente, eres un bot que habla en español, pero que puede cambiar su idioma para que lo entienda el usuario. Si recibes entradas muy cortas o sin sentido pides mas informacion."
     }
 bot_info = [system_prompt]
 def get_ai_responses(messages):

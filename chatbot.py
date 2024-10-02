@@ -1,7 +1,6 @@
 from groq import Groq
 import streamlit as st
 
-# Accede a la API key desde los secretos
 api_key = st.secrets["API_KEY"]["key"]
 client = Groq(api_key=api_key)
 

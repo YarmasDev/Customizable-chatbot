@@ -1,13 +1,16 @@
 from groq import Groq
 import streamlit as st
+import os
 
-client = Groq(api_key="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")
+# Load API key from Streamlit secrets
+client = Groq(api_key=st.secrets["API_KEY"])
+
 system_prompt = {
-        "role": "system",
-        "content":
-        "You give precise answers, you adapt to the user."
-    }
+    "role": "system",
+    "content": "You give precise answers, you adapt to the user."
+}
 bot_info = [system_prompt]
+
 def get_ai_responses(messages):
     completion = client.chat.completions.create(
         model="llama3-70b-8192",
@@ -39,9 +42,6 @@ def manage_bot_info():
             st.session_state["messages"][0] = system_prompt
         st.session_state["last_bot_info"] = bot_info_input
 
-
-
-
 def chat():
     st.title("Chat with your virtual assistant")
     st.write("Customize your chatbot so that it gives you the most appropriate answers for you")
@@ -66,7 +66,7 @@ def chat():
     for message in st.session_state["messages"]:
         # Skip the system message (bot description) when displaying chat history
         if message["role"] != "system":
-            role = "Tu" if message["role"] == "user" else "Bot"
+            role = "You" if message["role"] == "user" else "Bot"
             st.write(f"**{role}:** {message['content']}")
     
     # Input box for user messages

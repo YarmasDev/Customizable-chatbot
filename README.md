@@ -52,22 +52,14 @@ To run this project locally, ensure you have the required packages installed. Yo
 3. **Chat with the Bot**: Use the message input box to converse with your chatbot. It will respond based on your customized description and the context of your previous messages.
 4. The chat history will be displayed, allowing you to track the conversation flow.
 
-## Live Demo
-
-You can also try the live version of the application here: [Live Demo](https://your-live-demo-url)
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Acknowledgments
 
 - [Streamlit](https://streamlit.io/) for creating the web application framework.
 - [Groq](https://groq.com/) for providing the API to integrate advanced AI capabilities.
 - The `Llama3` model for generating human-like text responses.
-```
 
-### Instructions
-1. Create a file named `README.md` in the root of your project.
-2. Copy and paste the above content into that file.
-3. Replace `<repository-url>` and `https://your-live-demo-url` with your actual repository link and live demo link.
+## Live Demo
+
+You can also try the live version of the application here: https://chatbot-m8fcf5xlb7weicw2rxth7.streamlit.app/
+
+

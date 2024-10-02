@@ -1,4 +1,3 @@
-```markdown
 # Customizable Chatbot
 
 This project utilizes Streamlit and Groq to create a customizable chatbot that adapts its responses based on user-defined characteristics. Users can specify how they want their chatbot to behave and engage in conversations for personalized interactions.

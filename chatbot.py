@@ -24,7 +24,7 @@ def get_ai_responses(messages):
 
 def manage_bot_info():
     # Handle the bot description and initialization
-    bot_info_input = st.text_input("Describe your assistant", key="bot_info", placeholder="Write the description of the bot here")
+    bot_info_input = st.text_input("AAA", key="bot_info", placeholder="Write the description of the bot here")
 
     if "messages" not in st.session_state:
         st.session_state["messages"] = []

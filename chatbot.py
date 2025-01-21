@@ -66,7 +66,7 @@ def chat():
     for message in st.session_state["messages"]:
         # Skip the system message (bot description) when displaying chat history
         if message["role"] != "system":
-            role = "You" if message["role"] == "user" else "Bot"
+            role = "Tú" if message["role"] == "user" else "Bot"
             st.write(f"**{role}:** {message['content']}")
     
     # Input box for user messages

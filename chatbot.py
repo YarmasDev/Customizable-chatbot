@@ -7,7 +7,7 @@ client = Groq(api_key=api_key)
 
 system_prompt = {
     "role": "system",
-    "content": "You give precise answers, you adapt to the user."
+    "content": "Hablas en español por defecto, estas programado para dar soluciones y/o recomendar alternativas de solucion para problemas relacionados la pagina de una institucion educativa y su aula virtual, das respuestas precisas y concisas, evitas ser redundante, te adaptas a las necesidades del usuario."
 }
 bot_info = [system_prompt]
 
@@ -24,7 +24,7 @@ def get_ai_responses(messages):
 
 def manage_bot_info():
     # Handle the bot description and initialization
-    bot_info_input = st.text_input("AAA", key="bot_info", placeholder="Write the description of the bot here")
+    bot_info_input = st.text_input("Para una mejor respuesta, escribe el tipo de problema que estas experimentando", key="bot_info", placeholder="Escribe el tipo de problema aquí.")
 
     if "messages" not in st.session_state:
         st.session_state["messages"] = []
@@ -43,8 +43,8 @@ def manage_bot_info():
         st.session_state["last_bot_info"] = bot_info_input
 
 def chat():
-    st.title("Chat with your virtual assistant")
-    st.write("Customize your chatbot so that it gives you the most appropriate answers for you")
+    st.title("Chatea con nuestro Asistente Virtual")
+    st.write("Nuestro Chatbot esta programado para brindar soporte de forma inmediata a los usuarios")
 
     # Handle the bot info management
     manage_bot_info()
@@ -70,7 +70,7 @@ def chat():
             st.write(f"**{role}:** {message['content']}")
     
     # Input box for user messages
-    st.text_input("Write your message", key="user_input", on_change=submit)
+    st.text_input("Describe tu problema aquí.", key="user_input", on_change=submit)
 
 if __name__ == "__main__":
     chat()

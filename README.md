@@ -58,8 +58,4 @@ To run this project locally, ensure you have the required packages installed. Yo
 - [Groq](https://groq.com/) for providing the API to integrate advanced AI capabilities.
 - The `Llama3` model for generating human-like text responses.
 
-## Live Demo
-
-You can also try the live version of the application here: https://chatbot-m8fcf5xlb7weicw2rxth7.streamlit.app/
-
 
